@@ -27,6 +27,7 @@ log             = { version=">=0.4.4,  <0.5", features = ["std"] }
 [features]
 default = []
 xml = ["xml-rs"]
+cargo-clippy = []
 
 [dev-dependencies]
 rand            = { version=">=0.7.0, <0.8" }

@@ -82,6 +82,7 @@ impl<'a> Serialize for NodeRef<'a> {
     }
 }
 
+#[allow(clippy::to_string_trait_impl)]
 /// Implemented via [`Document::serialize`].
 impl ToString for Document {
     fn to_string(&self) -> String {
@@ -127,6 +128,7 @@ impl<'a> NodeRef<'a> {
     }
 }
 
+#[allow(clippy::to_string_trait_impl)]
 /// Implemented via [`NodeRef::serialize`].
 impl<'a> ToString for NodeRef<'a> {
     fn to_string(&self) -> String {
