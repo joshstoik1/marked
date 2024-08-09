@@ -16,13 +16,13 @@ build         = "build.rs"
 doctest = false
 
 [dependencies]
-html5ever       = { version=">=0.27.0, <0.28" }
-tendril         = { version=">=0.4.1,  <0.5", features=["encoding_rs"] }
-encoding_rs     = { version=">=0.8.13, <0.9" }
-xml-rs          = { version=">=0.8,    <0.9", package="xml-rs", optional=true }
-string_cache    = { version=">=0.8.0,  <0.9" }
-mime            = { version=">=0.3.14, <0.4" }
-log             = { version=">=0.4.4,  <0.5", features = ["std"] }
+html5ever       = { version="0.27.*" }
+tendril         = { version="0.4.*", features=["encoding_rs"] }
+encoding_rs     = { version="0.8.12" } # Match tendril dependency
+xml-rs          = { version="0.8.*", package="xml-rs", optional=true }
+string_cache    = { version="0.8.*" }
+mime            = { version="0.3.14" }
+log             = { version="0.4.*", features = ["std"] }
 
 [features]
 default = []
